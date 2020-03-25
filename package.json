@@ -6,7 +6,7 @@
   "bin": {
     "redux": "./bin/run"
   },
-  "bugs": "https://github.com/Aminejvm/Typescript redux generator/issues",
+  "bugs": "https://github.com/Aminejvm/typescript-redux-generator/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
@@ -45,7 +45,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/Aminejvm/Typescript redux generator",
+  "homepage": "https://github.com/Aminejvm/typescript-redux-generator",
   "keywords": [
     "oclif"
   ],
@@ -58,7 +58,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "Aminejvm/Typescript redux generator",
+  "repository": "Aminejvm/typescript-redux-generatorr",
   "scripts": {
     "postpack": "rimraf oclif.manifest.json",
     "posttest": "eslint . --ext .ts --config .eslintrc",
