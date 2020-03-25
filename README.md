@@ -11,5 +11,19 @@ Generate Actions and Reducers based on Duck method
 <!-- toc -->
 # Usage
 <!-- usage -->
-# Commands
-<!-- commands -->
+```bash
+#First command is to initialise Redux boilerplate (./redux)
+# You can then get rootReducer from ./redux and integrate it in your config
+redux init
+
+#Second you need to create a Feature to contain reducers and actions.
+redux create --f (name of feature)
+
+#Create a synchronous action
+#You'll get prompt with existing features to choose from. 
+redux create --a (name of action)
+
+#Create a asynchronous action
+# You'll get prompt with existing feature to choose from.
+redux create --async (name of async action)
+```
