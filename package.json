@@ -1,12 +1,14 @@
 {
   "name": "@t7m/redux-generator",
   "description": "Generate Actions and Reducers based on Duck method",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "author": "@Aminejvm",
   "bin": {
     "redux": "./bin/run"
   },
-  "bugs": "https://github.com/Aminejvm/typescript-redux-generator/issues",
+  "bugs": {
+    "url": "https://github.com/Aminejvm/typescript-redux-generator/issues"
+  },
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
@@ -58,7 +60,10 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "Aminejvm/typescript-redux-generatorr",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aminejvm/typescript-redux-generatorr.git"
+  },
   "scripts": {
     "postpack": "rimraf oclif.manifest.json",
     "posttest": "eslint . --ext .ts --config .eslintrc",
@@ -66,5 +71,8 @@
     "test": "echo NO TESTS",
     "version": "oclif-dev readme && git add README.md"
   },
-  "types": "lib/index.d.ts"
+  "types": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  }
 }

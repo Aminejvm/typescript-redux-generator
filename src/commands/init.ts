@@ -12,6 +12,7 @@ class InitCommand extends Command {
     } else {
       this.log('initialising Redux Directory')
       Redux.initiate()
+      this.log('Redux directory is initialized')
     }
   }
 }

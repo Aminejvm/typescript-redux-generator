@@ -37,6 +37,7 @@ class CreateCommand extends Command {
     if (flags.f) {
       this.log('initialising feature' + flags.f)
       Feature.initiate({feature: flags.f})
+      this.log(flags.f + 'feature initialized')
     }
     if (flags.a) {
       const feature = await prompFeatures()
@@ -47,6 +48,7 @@ class CreateCommand extends Command {
       }
       this.log(`initialising action ${flags.a} on feature ${feature}`)
       Action.createSyncAction({feature, name: flags.a})
+      this.log(`${flags.a} Action is initialized on ${feature} feature.`)
     }
     if (flags.async) {
       const feature = await prompFeatures()
@@ -57,8 +59,9 @@ class CreateCommand extends Command {
       }
       this.log(`initialising action ${flags.a} on feature ${feature}`)
       Action.createAsyncAction({feature, name: flags.async})
+      this.log(`${flags.a} Async Action is initialized on ${feature} feature.`)
     }
-    if (!(flags.a && flags.async && flags.f))
+    if (!(flags.a || flags.async || flags.f))
       this.error(
         'Add a flag --f:feature, --a:sync action ,--async:async action '
       )
