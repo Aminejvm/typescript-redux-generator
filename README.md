@@ -10,7 +10,6 @@ Generate Actions and Reducers based on Duck method
 
 <!-- toc -->
 * [Usage](#usage)
-* [You can then get rootReducer from ./redux and integrate it in your config](#you-can-then-get-rootreducer-from-redux-and-integrate-it-in-your-config)
 * [You'll get prompt with existing feature to choose from.](#youll-get-prompt-with-existing-feature-to-choose-from)
 <!-- tocstop -->
 # Usage
@@ -20,17 +19,8 @@ $ npm install -g @t7m/redux-generator
 $ redux COMMAND
 running command...
 $ redux (-v|--version|version)
-@t7m/redux-generator/0.0.1 win32-x64 node-v10.16.3
+@t7m/redux-generator/0.0.2 win32-x64 node-v10.16.3
 $ redux --help [COMMAND]
-# Getting started
-```
-yarn add @t7m/redux-generator --dev
-#Or
-npm install @t7m/redux-generator --save-dev
-``` 
-This is a redux generator following the duck pattern.
-More documentation will come as the project mature with time.
-
 USAGE
   $ redux COMMAND
 ...
